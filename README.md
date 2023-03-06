@@ -1,6 +1,6 @@
 # Food Recipes App
 
-Food Recipes is Website app that collection of many food recipe, on this application you can find a food recipes around the world. Happy cooking.
+Food Recipes is Website app that collection of many food recipe, on this application you can find a food recipes around the world. Happy cooking and then this application is mobile friendly.
 
 ![Logo](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/Assets/food%20recipes.jpg)
 

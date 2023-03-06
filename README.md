@@ -1,38 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Food Recipes App
 
-## Getting Started
+Food Recipes is Website app that collection of many food recipe, on this application you can find a food recipes around the world. Happy cooking.
 
-First, run the development server:
+![Logo](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/Assets/food%20recipes.jpg)
+
+## Table Of Content
+- [Demo](#Demo)
+- [Installation](#Installation)
+- [Screenshots](#Screenshots)
+- [Tech Stack](#Tech-Stack)
+- [Screenshot](#Screenshots)
+- [Created by](#Created)
+
+## Demo
+
+#### https://recipppe.netlify.app/
+
+## Installation
+
+Install my-project with npm
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+First you can clone my project with git: git clone https://github.com/IrfanJulian/Food-App.git
+```
+    
+Go to the project directory
+
+```bash
+  cd my-project
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+  npm install
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Start the server
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+  npm run start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Register Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/register.png)
 
-## Learn More
+### Validation OTP Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/OTP%20verified.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Forgot Password Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/forgot%20password.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Reset Password Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/reset%20password.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Login Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/login%20(2).png)
 
-## Deploy on Vercel
+### Landing Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/landing%20page.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### List Recipe Landing Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/list%20landing%20page.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Detail Recipe Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/detail%20recipe%20(2).png)
+
+### Comment on Detail Recipe Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/comment.png)
+
+### Add Menu Recipe Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/add%20recipe.png)
+
+### Profile Page
+![App Screenshot](https://raw.githubusercontent.com/IrfanJulian/Food-App/main/screenshot/profile.png)
+
+## Tech-Stack
+
+**Client:** Next JS, Axios, TailwindCSS, Sweet Alert 2.
+
+**Server:** Node, Express, Node Mailer, Cloudinary.
+
+## 🛠 Skills
+Javascript, HTML, CSS, React JS, Next JS, Node JS, Express JS, PostgreSQL.
+
+## 👩‍💻 Created
+© [Irfan Julian](https://github.com/IrfanJulian)

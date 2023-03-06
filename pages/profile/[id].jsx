@@ -14,7 +14,6 @@ export async function getServerSideProps(context){
 
     const myrecipe = await fetch(`${process.env.URL_API}recipe/myrecipe/${id}`)
     const myfood = await myrecipe.json()
-    console.log(myfood);
 
     const result = await fetch(`${process.env.URL_API}user/${id}`)
     const data = await result.json()
@@ -66,11 +65,10 @@ const MyProfile = ({ user, recipe }) => {
 
   return (
     <div>
-        <div className="wrapper wrapper">
-        <div className="absolute top-0 left-0">
+        <div className={`wrapper ${myRecipes && myRecipes.length !== 0 ? 'h-max' : 'h-screen'}`}>
         <Navbar />
-        </div>
             <div className="my-10">
+                <p className='text-3xl font-bold text-center mb-16'>Profile</p>
                 <div className="wrapperimage relative">
                     {edit === true ?
                             <div className='absolute top-0 w-screen lg:pr-4 h-[10rem] md:h-[20rem]'>

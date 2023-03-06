@@ -63,9 +63,9 @@ const Navbar = () => {
               <div className="w-1/12 h-max my-auto">
                   <button onClick={()=>show === false ? setShow(true) : setShow(false)} className='ml-auto'>
                     { show === false ?
-                      <Image src={menu} width={35} height={35} alt='logo'/>
+                      <Image src={menu} width={30} height={30} alt='logo'/>
                       :
-                      <Image src={close} width={35} height={35} alt='logo'/>  
+                      <Image src={close} width={30} height={30} alt='logo'/>  
                     }
                   </button>
                 </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <button onClick={()=>router.push(`/`)} className='mx-auto w-max text-white text-md font-semibold'>Home</button>
                 <button onClick={()=>router.push(`/profile/${id}`)} className='mx-auto w-max text-white text-md font-semibold'>Profile</button>
                 <button onClick={()=>router.push(`/menu/add-menu`)} className='mx-auto w-max text-white text-md font-semibold'>Add Menu</button>
-                <button onClick={()=>{localStorage.clear(); router.push(`/auth/login`)}} className='mx-auto w-max text-white text-md font-semibold'>Logout</button>
+                <button onClick={()=>{localStorage.clear(); router.push(`/auth/login`)}} className='mx-auto w-max text-white text-md font-semibold mb-5'>Logout</button>
               </div>
               }
             </div>

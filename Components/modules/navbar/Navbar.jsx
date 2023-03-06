@@ -2,8 +2,6 @@
 import Image from 'next/image'
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
-import menu from '../../../Assets/menu new.png'
-import close from '../../../Assets/close new.png'
 import logo from '../../../Assets/logo.png'
 
 const Navbar = () => {
@@ -63,9 +61,15 @@ const Navbar = () => {
               <div className="w-1/12 h-max my-auto">
                   <button onClick={()=>show === false ? setShow(true) : setShow(false)} className='ml-auto'>
                     { show === false ?
-                      <Image src={menu} width={30} height={30} alt='logo'/>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    
                       :
-                      <Image src={close} width={30} height={30} alt='logo'/>  
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+
                     }
                   </button>
                 </div>

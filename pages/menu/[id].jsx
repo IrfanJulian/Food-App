@@ -63,7 +63,7 @@ const DetailMenu = ({ recipe, comment }) => {
           <p className='md:text-4xl text-2xl text-center font-medium'>{food.tittle}</p>
           <div className="wrappervid w-11/12 md:w-1/2 border mx-auto my-5">
             <video className='rounded-md w-full' controls>
-              <source src={'/ramen.mp4'} type='video/mp4' />
+              <source src={food.photo} type='video/mp4' />
             </video>
           </div>
           <div className="ingredients w-3/4 mx-auto">
@@ -78,7 +78,7 @@ const DetailMenu = ({ recipe, comment }) => {
                 { comments ? comments.map((item)=>
                   <div key={item.id} className="w-full mt-5 mx-auto">
                     <div className="flex space-x-5">
-                      <Image src={item.photo.length === 0 ? image : item.photo } alt='icon' width={10} height={10} />
+                      <Image src={item.photo.length === 0 ? image : item.photo } alt='icon' width={60} height={60} className='rounded-full' />
                       <div className="wrapper">
                         <p className='font-bold'>{item.name}</p>
                         <p className='mt-2 text-sm md:text-lg'>{item.comment}</p>

@@ -25,7 +25,8 @@ export async function getServerSideProps(context) {
 const OTP = (props) => {
 
     const [loading, setLoading] = useState(false)
-    const otp = props.data.data.otp
+    const data = props.data.data
+    const otp = data
     const [otp2, setOtp2] = useState('')
     const router = useRouter()
 

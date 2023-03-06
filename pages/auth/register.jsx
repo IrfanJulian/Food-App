@@ -262,7 +262,7 @@ const Register = () => {
             <button onClick={handleRegister} className="transition-all duration-300 w-3/4 mx-auto py-3 mt-8 text-xl rounded-md hover:scale-105 hover:bg-[#f8dc60] text-white bg-[#EFC81A]">
               Sign Up
             </button>
-            <button className="transition-all duration-300 mt-2 hover:scale-105 hover:text-[#EFC81A]">
+            <button onClick={()=>router.push('/forgot-password')} className="transition-all duration-300 mt-2 hover:scale-105 hover:text-[#EFC81A]">
               Forgot Password ?
             </button>
           </div>

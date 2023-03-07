@@ -21,7 +21,7 @@ const Navbar = () => {
     }, [])
     
   return (
-      <div className="relative top-0 bg-[#EFC81A] opacity-100 w-screen" id='font-custom'>
+      <div className="relative top-0 bg-[#EFC81A] md:bg-none opacity-100 w-screen" id='font-custom'>
           <div className="container mx-auto hidden md:flex py-8">
               {/* <div className={token ? 'w-1/12' : 'w-11/12'}>
                 <Image src={logo} width={75} height={75} alt='logo' onClick={()=>router.push('/')} className='cursor-pointer' />

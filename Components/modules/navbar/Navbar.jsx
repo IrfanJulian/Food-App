@@ -34,7 +34,7 @@ const Navbar = () => {
                       <button onClick={()=>router.push(`/profile/${id}`)} className='h-max my-auto font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>Profile</button>
                     </div>
                     <div className='w-1/12 h-max grid'>  
-                      <button onClick={()=>{localStorage.clear(); router.push(`/auth/login`)}} className='flex h-max my-auto ml-auto font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>
+                      <button onClick={()=>{localStorage.clear(); router.push(`/auth/login`)}} className='flex h-max my-auto border border-blue-400 ml-auto font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 mr-2 text-white">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
                         </svg>
@@ -43,8 +43,8 @@ const Navbar = () => {
                     </div>
                   </div>
               :
-                <div className="w-1/12 ml-auto grid">
-                  <button onClick={()=>router.push('/auth/login')} className='flex h-max my-auto ml-auto font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>
+                <div className="w-1/12 ml-auto border grid">
+                  <button onClick={()=>router.push('/auth/login')} className='flex h-max my-auto border border-blue-400 ml-auto font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 mr-2 text-white">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
                     </svg>

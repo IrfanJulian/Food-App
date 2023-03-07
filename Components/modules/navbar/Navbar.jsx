@@ -22,19 +22,19 @@ const Navbar = () => {
     
   return (
       <div className="relative top-0 bg-[#EFC81A] opacity-100 w-screen" id='font-custom'>
-          <div className="container mx-auto hidden md:flex py-3">
-              <div className={token ? 'w-1/12' : 'w-11/12'}>
+          <div className="container mx-auto hidden md:flex py-8">
+              {/* <div className={token ? 'w-1/12' : 'w-11/12'}>
                 <Image src={logo} width={75} height={75} alt='logo' onClick={()=>router.push('/')} className='cursor-pointer' />
-              </div>
+              </div> */}
               { token ?
                   <div className="w-full flex">
                     <div className='flex w-11/12 space-x-20'>
-                      <button onClick={()=>router.push('/')} className='h-max mt-4 font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>Home</button>
-                      <button onClick={()=>router.push(`/menu/add-menu`)} className='h-max mt-4 font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>Add Recipe</button>
-                      <button onClick={()=>router.push(`/profile/${id}`)} className='h-max mt-4 font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>Profile</button>
+                      <button onClick={()=>router.push('/')} className='h-max font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>Home</button>
+                      <button onClick={()=>router.push(`/menu/add-menu`)} className='h-max font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>Add Recipe</button>
+                      <button onClick={()=>router.push(`/profile/${id}`)} className='h-max font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>Profile</button>
                     </div>
                     <div className='w-1/12 h-max grid'>  
-                      <button onClick={()=>{localStorage.clear(); router.push(`/auth/login`)}} className='flex h-max mt-4 ml-auto font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>
+                      <button onClick={()=>{localStorage.clear(); router.push(`/auth/login`)}} className='flex h-max ml-auto font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 mr-2 text-white">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
                         </svg>
@@ -44,7 +44,7 @@ const Navbar = () => {
                   </div>
               :
                 <div className="w-1/12 ml-auto grid">
-                  <button onClick={()=>router.push('/auth/login')} className='flex h-max mt-4 ml-auto font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>
+                  <button onClick={()=>router.push('/auth/login')} className='flex h-max ml-auto font-semibold transition-all duration-300 text-xl text-white hover:scale-110 py-2 px-5 rounded-full hover:bg-gray-500 hover:opacity-80'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 mr-2 text-white">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
                     </svg>
